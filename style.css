@@ -5,12 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-h1 {
-    padding: 1rem;
+body {
+    background-color: tan;
 }
 
 main {
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 }
