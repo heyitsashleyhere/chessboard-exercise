@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: tan;
+    background-color: rgb(223, 201, 171);
 }
 
 main {
@@ -128,11 +128,35 @@ div:hover {
 }
 
 /* =====================
-    button
+    toggle
 ======================== */
-button {
-    margin-top: 1rem;
-    padding: 0.3rem;
-    text-transform: uppercase;
-    cursor: pointer;
+.toggle-container {
+    width: 60px;
+    height: 30px;
+    background-color: lightgreen;
+    display: block;
+    border-radius: 40px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.toggle-child {
+    width: 30px;
+    height: 100%;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+input:checked + .toggle-container {
+    background-color: lightskyblue;
+}
+
+input:checked + .toggle-container .toggle-child {
+    background-color: lightpink;
+    transform: translateX(100%);
+}
+
+#toggle {
+    display: none;
 }
