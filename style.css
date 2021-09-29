@@ -37,16 +37,10 @@ div {
 }
 
 .chessboard {
-    width: 400px;
+    width: 416px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.border {
     border: .5rem solid sienna;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* =====================
@@ -123,10 +117,6 @@ div:hover span {
     display: block;
 }
 
-div:hover {
-    transition: all 6ms ease-in-out;
-}
-
 /* =====================
     toggle
 ======================== */
@@ -136,7 +126,7 @@ div:hover {
     background-color: lightgreen;
     display: block;
     border-radius: 40px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
@@ -157,6 +147,22 @@ input:checked + .toggle-container .toggle-child {
     transform: translateX(100%);
 }
 
-#toggle {
+input {
     display: none;
+}
+
+/* =====================
+    rotate chessboard
+======================== */
+input:checked ~ .chessboard,
+input:checked ~ .chessboard i ,
+input:checked ~ .chessboard span,
+input:checked ~ .chessboard p{
+    transform: rotate(180deg);
+}
+
+
+
+input:checked ~ .chessboard {
+    flex-direction: row-reverse;
 }
