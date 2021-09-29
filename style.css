@@ -12,7 +12,9 @@ body {
 main {
     margin-top: 5%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* =====================
@@ -56,6 +58,12 @@ div {
 
 .white>i {
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+}
+
+.black>i {
+    color: rgb(38, 38, 38);
+    text-shadow: 1px 1px 1px white;
 }
 
 /* =====================
@@ -78,7 +86,6 @@ p {
 .name:hover p {
     visibility: visible;
     cursor: pointer;
-    transition: all 6ms ease-in-out;
 }
 
 /* =====================
@@ -108,6 +115,24 @@ span {
     color: white;
 }
 
+.blacks {
+    color: rgb(38, 38, 38);
+}
+
 div:hover span {
     display: block;
+}
+
+div:hover {
+    transition: all 6ms ease-in-out;
+}
+
+/* =====================
+    button
+======================== */
+button {
+    margin-top: 1rem;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
