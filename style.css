@@ -16,11 +16,14 @@ main {
 }
 
 /* =====================
-    squares
+    board
 ======================== */
 div {
     width: 50px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .white-squares {
@@ -37,3 +40,13 @@ div {
     flex-wrap: wrap;
 }
 
+/* =====================
+    pawns
+======================== */
+.fas {
+    font-size: 2rem;
+}
+
+.white>i {
+    color: rgb(255, 255, 255);
+}
