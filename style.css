@@ -50,3 +50,26 @@ div {
 .white>i {
     color: rgb(255, 255, 255);
 }
+
+/* =====================
+    name
+======================== */
+p {
+    font-size: 2rem;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+.black-squares>p {
+    color: springgreen;
+}
+
+.white-squares>p {
+    color: rebeccapurple;
+}
+
+.name:hover p {
+    visibility: visible;
+    cursor: pointer;
+    transition: all 6ms ease-in-out;
+}
