@@ -161,8 +161,6 @@ input:checked ~ .chessboard p{
     transform: rotate(180deg);
 }
 
-
-
 input:checked ~ .chessboard {
     flex-direction: row-reverse;
 }
