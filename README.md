@@ -8,3 +8,4 @@ extra tasks:
 - on hover every square changes color
 - hover on pawns and they disappear and shows a letter
 - add a button that turns the whole chessboard
+- add a path for every piece
