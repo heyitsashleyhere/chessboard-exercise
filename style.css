@@ -49,12 +49,12 @@ div {
 .fas {
     font-size: 2rem;
 }
-
+/* icons in the white-squares */
 .white>i {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
 }
-
+/* icons in the black-squares */
 .black>i {
     color: rgb(38, 38, 38);
     text-shadow: 1px 1px 1px white;
@@ -115,6 +115,12 @@ span {
 
 div:hover span {
     display: block;
+}
+
+/* hover PATH ------------------- */
+#white-lt-rook:hover ~ .first-row,
+#white-lt-rook:hover ~ .first-column {
+    box-shadow: inset 0px 0px 15px 5px rgb(255, 255, 255);
 }
 
 /* =====================
