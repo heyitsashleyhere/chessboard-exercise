@@ -40,8 +40,15 @@ div {
     flex-wrap: wrap;
 }
 
+.border {
+    border: .5rem solid sienna;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* =====================
-    pawns
+    chess pieces
 ======================== */
 .fas {
     font-size: 2rem;
@@ -85,3 +92,22 @@ p {
     background-color: palegreen;
 }
 
+/* =====================
+    hover pawn change
+======================== */
+div:hover i {
+    display: none;
+}
+
+span {
+    display: none;
+    font-size: 2rem;
+}
+
+.whites {
+    color: white;
+}
+
+div:hover span {
+    display: block;
+}
