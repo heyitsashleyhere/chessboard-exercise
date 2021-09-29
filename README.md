@@ -5,4 +5,5 @@ Try and insert some images with the chess pieces.
 Use hover over the squares of the chess to make the letters of your name appear on it.
 
 on hover every square changes color
+hover on pawns and they disappear and shows a letter
 add a button that turns the whole chessboard
