@@ -61,11 +61,11 @@ p {
 }
 
 .black-squares>p {
-    color: springgreen;
+    color: rebeccapurple;
 }
 
 .white-squares>p {
-    color: rebeccapurple;
+    color: springgreen;
 }
 
 .name:hover p {
@@ -73,3 +73,15 @@ p {
     cursor: pointer;
     transition: all 6ms ease-in-out;
 }
+
+/* =====================
+    hover color change
+======================== */
+.white-squares:hover {
+    background-color: pink;
+}
+
+.black-squares:hover {
+    background-color: palegreen;
+}
+
