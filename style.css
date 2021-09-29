@@ -118,8 +118,8 @@ div:hover span {
 }
 
 /* hover PATH ------------------- */
-#white-lt-rook:hover ~ .first-row,
-#white-lt-rook:hover ~ .first-column {
+#a1:hover ~ .first-row,
+#a1:hover ~ .first-column {
     box-shadow: inset 0px 0px 15px 5px rgb(255, 255, 255);
 }
 
@@ -170,3 +170,15 @@ input:checked ~ .chessboard p{
 input:checked ~ .chessboard {
     flex-direction: row-reverse;
 }
+/* animation */
+/* #h1:hover {
+    animation-name: h1;
+    animation-duration: 8s;
+}
+@keyframes h1 {
+    0%  {transform: translateX(0px);}
+    20% {transform: translateX(-570px);}
+    40% {transform: translateX(0px);}
+    60% {transform: translateY(-570px);}
+    80% {transform: translateY(0px);}
+} */
